@@ -47,6 +47,9 @@ podAnnotations: {}
 # priorityClassName: system-cluster-critical
 priorityClassName: {}
 
+# some metrics needs hostPID to be set to true https://github.com/google/cadvisor/issues/2251#issuecomment-506237750
+hostPID: false
+
 # sometimes errors are encountered when using the cpu load reader without being on the host network
 hostNetwork: false
 
